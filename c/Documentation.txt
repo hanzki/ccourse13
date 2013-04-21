@@ -1,0 +1,40 @@
+Documentation of dht project, iteration 1 version 0.1.20130407-1136 Team 19/20
+
+Instructions:
+Make sure that you have openssl-devel package installed, as it is required for
+the compilation, after you have it, you can compile the node by running:
+"make all"
+Run the node with following command
+"dhtnode own_hostname own_port"
+To connect to server and other nodes enter command
+"connect server_url port"
+To exit and safely disconnect enter command
+"exit"
+To exit without asking for permision from server use:
+"exit force"
+
+Iplementation:
+DHT-node is implemented in file dhtnode.c and prototyped at respective header file
+DHT-packet structure and many macro values are defined in dhtpacket.h
+Input is handled by consoleui.c and .h and neworker.c and .h are used for sending
+and reciving data. We implemented the project using Netbeans as IDE and gcc on
+cygwin as a compiler, cygwin provides us with posix-implementation. We also used 
+openssl for sha1-hashes. Code is commented in-line and with javadoc comments in 
+header files per function.
+
+Testing:
+Testing was done by running server at one of our own ubuntu servers, and running
+nodes from our own windows computers. Testing was done by connecting and closing
+nodes in different order and printing debug information. All the bugs that were
+found during the testing were fixed. 
+
+Time managment:
+Time managment was done with google drive spreedsheet. Amounth of work was as
+expected, but divided quit unevenly between members of team. here is our 
+timesheet: http://tinyurl.com/timespendc
+
+Practise improvements for second iteration:
+-Starting early, first iteration code was developed in a 3 day spurt and that
+made things pretty hectic
+-Better planning for architechture in order to better distribute workload and to 
+make sure that no code is wasted. This also helps us to progress more steadily.
